@@ -7,7 +7,7 @@ import os
 import tempfile
 
 # Initialize Firebase Admin
-firebaseKey = "serviceAccountKey.json"
+firebaseKey = "../serviceAccountKey.json"
 cred = credentials.Certificate(firebaseKey)
 firebase_admin.initialize_app(cred, {"storageBucket": "brainrot-24a7a.appspot.com"})
 
