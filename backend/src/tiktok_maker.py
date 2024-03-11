@@ -1,3 +1,4 @@
+import json
 import requests
 import random
 from download_clip import download_clip
@@ -5,10 +6,14 @@ from datetime import datetime, timedelta
 
 
 def fetch_and_download_twitch_clip(username):
+    # Load secrets from the JSON file
+    with open("../twitchKey.json", "r") as f:
+        secrets = json.load(f)
+
     url = "https://id.twitch.tv/oauth2/token"
     params = {
-        "client_id": "kmbu7hh74r8brdi2nbj40i3rvj2rmw",
-        "client_secret": "ct4hxwwkpkzlmj3yeb4vm17jzakwqc",
+        "client_id": secrets["client_id"],
+        "client_secret": secrets["client_secret"],
         "grant_type": "client_credentials",
     }
 
@@ -17,7 +22,7 @@ def fetch_and_download_twitch_clip(username):
     access_token = data["access_token"]
 
     headers = {
-        "Client-ID": "kmbu7hh74r8brdi2nbj40i3rvj2rmw",
+        "Client-ID": secrets["client_id"],
         "Authorization": f"Bearer {access_token}",
     }
 
