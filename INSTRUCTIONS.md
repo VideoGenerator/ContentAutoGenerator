@@ -86,6 +86,7 @@ chmod +x install_dependencies.sh
 
 Once the script finishes executing, everything is ready to go.  You can now run the Flask application locally.
 
+
 If you encounter any permissions errors, ensure you are executing the script with sufficient privileges. You may need to run the script with `sudo`:
 
 ```bash
@@ -94,11 +95,18 @@ sudo ./install_dependencies.sh
 
 ## Hosting Locally
 
+Ensure you are in the virtual environment:
+
+```bash
+source venv/bin/activate
+```
+
 Navigate to backend/src and run the following command to create an instance:
 
 ```bash
-sudo ./install_dependencies.sh
+python3 video_api.py
 ```
+
 
 Now the API is setup and we can start making requests from the frontend!
 
