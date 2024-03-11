@@ -52,6 +52,26 @@ Create file `serviceAccountKey.json` in the directory titled backend of this pro
 
 For more detailed instructions and guidance, refer to the [Firebase documentation](https://firebase.google.com/docs).
 
+## Twitch API Configuration
+
+### Register Your App
+
+Follow the instructions for [Registering Your App](https://dev.twitch.tv/docs/authentication/register-app/)
+
+### Use the Configuration File
+
+Create `twitchKey.json` in the the `backend` directory and paste in the following json with your credentials
+
+```json
+{
+    "client_id": "YOUR CLIENT_ID HERE",
+    "client_secret": "YOUR CLIENT_SECRET HERE"
+}
+```
+### Additional Notes
+
+`twitchKey.json` is already in the gitignore, so you won't have to worry about publishing your keys!
+
 
 ## Install Dependencies
 
