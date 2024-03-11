@@ -6,6 +6,8 @@ This guide will walk you through the steps on how to create your own instance of
 
 Fork the repository to create your own copy.
 
+Requires homebrew for installs.
+
 Ensure you have `git` and `curl` installed on your system. You can install these on a Debian-based system (like Ubuntu) using:
 
 ```bash

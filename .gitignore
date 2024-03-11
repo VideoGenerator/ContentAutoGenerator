@@ -130,9 +130,24 @@ dist
 .pnp.*
 
 # Byte-compile / optimized / DLL files
+
+# pycache files
+all files ending in .pyc
 __pycache__/
-*.py[cod]
-*$py.class
+
+
+
+# Virtual Environments
+
+backend/venv/
+
+# Sublime Text files
 
 serviceAccountKey.json
 twitchKey.json
+
+# ignore anythin in clips/ folder
+clips/*
+
+# ignore backend/src/temp-audio.m4a
+backend/src/temp-audio.m4a
