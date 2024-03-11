@@ -58,7 +58,7 @@ For more detailed instructions and guidance, refer to the [Firebase documentatio
 
 Follow the instructions for [Registering Your App](https://dev.twitch.tv/docs/authentication/register-app/)
 
-### Use the Configuration File
+### Create and Use the Configuration File
 
 Create `twitchKey.json` in the the `backend` directory and paste in the following json with your credentials
 
